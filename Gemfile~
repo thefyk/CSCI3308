@@ -7,6 +7,9 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 
+group :development do
+gem 'sqlite3'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -32,9 +35,7 @@ group :test do
   gem 'turn', :require => false
 end
 
-group :development do
-gem 'sqlite3'
-end
+
 
 group :production do
 gem 'pg'
